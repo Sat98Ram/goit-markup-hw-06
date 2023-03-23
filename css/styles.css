@@ -796,6 +796,10 @@ textarea {
   height: 40px;
   padding: 8px 36px;
   transition: border-color var(--transition-duration) var(--transition-cubic);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
 }
 
 .modal-form-group:not(:last-child) {
@@ -826,6 +830,24 @@ textarea {
   border-radius: 4px;
   height: 120px;
   padding: 8px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
+}
+
+.modal-form-group > textarea:hover,
+.modal-form-group > textarea:focus {
+  border-color: var(--primary-brand-color);
+  outline: transparent;
+}
+
+.modal-textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
 }
 
 .checkbox-label {
